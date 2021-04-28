@@ -15,19 +15,18 @@ function Landing() {
       <p>
         Give us some information below and we'll show you all of the resources
         that are relevant to you.
-        <br></br>
-        <br></br>
-        Alternatively, you can go{" "}
-        <Link to="/allresources" target="_blank">
-          here
-        </Link>{" "}
-        to see the resources broken down by county
       </p>
       <hr></hr>
       <div className="column is-two-fifths">
         <InfoForm />
       </div>
       <hr></hr>
+      Want To See What We've Already Collected?
+      <br></br>
+      <br></br>
+      <Link className="button is-primary" to="/allresources">
+        Browse All Resources
+      </Link>
     </div>
   )
 }
