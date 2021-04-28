@@ -2,10 +2,10 @@
   "name": "projectzeromichigan",
   "version": "1.0.0",
   "description": "Resource Hub For Change-Minded Individuals",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": "cd client && npm install && npm run build",
+    "heroku-postbuild": "cd client && npm install && npm run build && npm start",
     "server": "nodemon index.js",
     "client-install": "npm install --prefix client",
     "client": "npm start --prefix client",
