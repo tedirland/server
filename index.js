@@ -10,7 +10,9 @@ mongoose.connect(keys.mongoURI, {
   useUnifiedTopology: true,
 })
 
-app.get("/", (req, res) => res.send("API Running"))
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+})
 
 const PORT = process.env.PORT || 5000
 
