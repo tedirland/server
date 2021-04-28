@@ -1,51 +1,40 @@
 import React, { Component } from "react"
+import { Link } from "react-router-dom"
 
 class Header extends Component {
   render() {
     return (
       <nav className="navbar">
         <div className="navbar-brand">
-          <a className="navbar-item" href="/">
+          <Link className="navbar-item" to="/">
             <img
               src="https://media.vanityfair.com/photos/606b8b8c085a185aa59af1e2/master/w_2560%2Cc_limit/DMX-2021-GettyImages-517830522.jpg"
               alt="logo"
             />
-          </a>
-          <a
-            role="button"
-            href="/"
-            className="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+          </Link>
         </div>
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start">
             <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link" href="/">
-                More
-              </a>
+              <Link className="navbar-link" href="/">
+                ProjectZero
+              </Link>
               <div className="navbar-dropdown">
-                <a className="navbar-item" href="/">
+                <Link className="navbar-item" to="/about">
                   About
-                </a>
-                <a className="navbar-item" href="/">
+                </Link>
+                <Link className="navbar-item" to="/countyresources">
                   Resources By County
-                </a>
-                <a className="navbar-item" href="/">
+                </Link>
+                <Link className="navbar-item" to="/communityresources">
                   Resources By Community
-                </a>
-                <a className="navbar-item" href="/">
+                </Link>
+                <a className="navbar-item" href="/allresources">
                   Browse All Resources
                 </a>
                 <hr classname="navbar-divider"></hr>
                 <a className="navbar-item" href="/">
-                  Report an issue
+                  Contact Us
                 </a>
               </div>
             </div>

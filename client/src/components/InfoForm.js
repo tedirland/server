@@ -3,13 +3,29 @@ import React from "react"
 function InfoForm() {
   return (
     <div className="field">
-      <label className="label">Location</label>
-      <div className="control has-icons-left">
-        <input className="input" type="text" placeholder="Royal Oak" />
-        <span className="icon is-small is-left">
-          <i className="fas-map-marker"></i>
-        </span>
+      <label>
+        <strong>Your Sustainibility Information</strong>
+      </label>
+      <div className="control">
+        <input className="input" type="text" placeholder="City" />
       </div>
+      <div className="control">
+        <input className="input" type="text" placeholder="Utility Provider" />
+      </div>
+      <div className="control">
+        <input className="input" type="text" placeholder="Employer" />
+      </div>
+      <div className="control">
+        <input
+          className="input"
+          type="text"
+          placeholder="Grocery Store You Shop At"
+        />
+      </div>
+      <div className="control">
+        <input className="input" type="text" placeholder="Bank you use" />
+      </div>
+      <button className="button is-primary">Submit</button>
     </div>
 
     //     <div class="field">

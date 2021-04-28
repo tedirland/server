@@ -1,5 +1,6 @@
 import React from "react"
 import InfoForm from "./InfoForm"
+import { Link } from "react-router-dom"
 
 function Landing() {
   return (
@@ -16,8 +17,11 @@ function Landing() {
         that are relevant to you.
         <br></br>
         <br></br>
-        Alternatively, you can go <a href="/resources">here</a> to see the
-        resources broken down by county
+        Alternatively, you can go{" "}
+        <Link to="/allresources" target="_blank">
+          here
+        </Link>{" "}
+        to see the resources broken down by county
       </p>
       <hr></hr>
       <div className="column is-two-fifths">

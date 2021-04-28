@@ -4,7 +4,12 @@
   "description": "Resource Hub For Change-Minded Individuals",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "server": "nodemon index.js",
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -17,6 +22,7 @@
   },
   "homepage": "https://github.com/tedirland/server#readme",
   "dependencies": {
+    "concurrently": "^6.0.2",
     "express": "^4.17.1",
     "mongoose": "^5.12.6"
   }
