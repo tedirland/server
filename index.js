@@ -2,13 +2,15 @@ const express = require("express")
 const mongoose = require("mongoose")
 const keys = require("./config/keys")
 
+const app = express()
+
 mongoose.connect(keys.mongoURI, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
 })
 
-const app = express()
+app.get("/", (req, res) => res.send("API Running"))
 
 const PORT = process.env.PORT || 5000
 
