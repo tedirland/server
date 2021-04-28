@@ -16,7 +16,7 @@ class Header extends Component {
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start">
             <div className="navbar-item has-dropdown is-hoverable">
-              <Link className="navbar-link" href="/">
+              <Link className="navbar-link" to="/">
                 ProjectZero
               </Link>
               <div className="navbar-dropdown">
@@ -29,13 +29,13 @@ class Header extends Component {
                 <Link className="navbar-item" to="/communityresources">
                   Resources By Community
                 </Link>
-                <a className="navbar-item" href="/allresources">
+                <Link className="navbar-item" to="/allresources">
                   Browse All Resources
-                </a>
-                <hr classname="navbar-divider"></hr>
-                <a className="navbar-item" href="/">
+                </Link>
+                <hr className="navbar-divider"></hr>
+                <Link className="navbar-item" to="/contact">
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -43,12 +43,9 @@ class Header extends Component {
           <div className="navbar-end">
             <div className="navbar-item">
               <div className="buttons">
-                <a className="button is-primary" href="/">
-                  <strong>Sign Up</strong>
-                </a>
-                <a className="button is-light" href="/">
-                  Sign In
-                </a>
+                <Link className="button is-primary" to="/sign">
+                  <strong>Sign In With Google</strong>
+                </Link>
               </div>
             </div>
           </div>

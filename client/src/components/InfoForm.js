@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 function InfoForm() {
   return (
@@ -25,7 +26,9 @@ function InfoForm() {
       <div className="control">
         <input className="input" type="text" placeholder="Bank you use" />
       </div>
-      <button className="button is-primary">Submit</button>
+      <Link className="button is-primary" to="/myresources">
+        Submit
+      </Link>
     </div>
 
     //     <div class="field">

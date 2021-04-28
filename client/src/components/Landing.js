@@ -27,6 +27,7 @@ function Landing() {
       <div className="column is-two-fifths">
         <InfoForm />
       </div>
+      <hr></hr>
     </div>
   )
 }

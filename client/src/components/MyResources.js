@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react"
 
 const Results = () => {
-    return (
-        <div>
-            Results
-        </div>
-    )
+  return <div>Personalized resources based on answers</div>
 }
 
 export default Results

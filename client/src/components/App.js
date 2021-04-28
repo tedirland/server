@@ -6,6 +6,7 @@ import MyResources from "./MyResources"
 import AllResources from "./AllResources"
 import CountyResources from "./CountyResources"
 import CommunityResources from "./CommunityResources"
+import Contact from "./Contact"
 import { BrowserRouter, Route } from "react-router-dom"
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
             <Route exact path="/allresources" component={AllResources} />
             <Route exact path="/myresources" component={MyResources} />
             <Route exact path="/countyresources" component={CountyResources} />
+            <Route exact path="/contact" component={Contact} />
             <Route
               exact
               path="/communityresources"
