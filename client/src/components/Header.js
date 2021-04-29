@@ -5,14 +5,6 @@ class Header extends Component {
   render() {
     return (
       <nav className="navbar">
-        <div className="navbar-brand">
-          <Link className="navbar-item" to="/">
-            <img
-              src="https://media.vanityfair.com/photos/606b8b8c085a185aa59af1e2/master/w_2560%2Cc_limit/DMX-2021-GettyImages-517830522.jpg"
-              alt="logo"
-            />
-          </Link>
-        </div>
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start">
             <div className="navbar-item has-dropdown is-hoverable">
