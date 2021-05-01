@@ -6,6 +6,10 @@ const app = express()
 
 connectDB()
 
+// Init Middleware
+
+app.use(express.json({ extended: true }))
+
 if (process.env.NODE_ENV === "production") {
   // Set static folder
   app.use(express.static("client/build"))

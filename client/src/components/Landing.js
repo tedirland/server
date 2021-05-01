@@ -1,6 +1,6 @@
-import React from "react"
-import InfoForm from "./InfoForm"
-import { Link } from "react-router-dom"
+import React from 'react';
+import InfoForm from './InfoForm';
+import { Link } from 'react-router-dom';
 
 function Landing() {
   return (
@@ -24,11 +24,11 @@ function Landing() {
       Want To See What We've Already Collected?
       <br></br>
       <br></br>
-      <Link className="button is-primary" to="/allresources">
+      <Link className="button is-info" to="/allresources">
         Browse All Resources
       </Link>
     </div>
-  )
+  );
 }
 
-export default Landing
+export default Landing;

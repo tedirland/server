@@ -1,17 +1,24 @@
 const mongoose = require("mongoose")
 const Schema = mongoose.Schema
 
-const countySchema = new Schema({
-  name: String,
-  communities: [],
-  zipCodes: [],
-  greenInitiatives: [],
-  commissioners: [],
-  mayors: [],
-  stateReps: [],
-  stateSens: [],
-  natRep: [],
-  natSens: [],
+const CountySchema = new Schema({
+  name: {
+    type: String,
+    required: true,
+    unique: true,
+  },
 })
 
-mongoose.model("county", countySchema)
+module.exports = County = mongoose.model("county", CountySchema)
+
+// name: String,
+// communities: [],
+// zipCodes: [],
+// greenInitiatives: [],
+// commissioners: [],
+// mayors: [],
+// stateReps: [],
+// stateSens: [],
+// nonProfits: [],
+// k12Schools: [],
+// higherEd: [],
